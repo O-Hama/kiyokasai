@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <!-- A-Frame を読み込む -->
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <!-- AR.js を読み込む -->
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <title>YumePark</title>
+  </head>
+  <body style="margin: 0; overflow: hidden">
+	  
+    <!-- A-FrameにAR.jsを紐づけ、VRボタン非表示、深度バッファ追加 -->
+    <a-scene embedded arjs vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;">
+	    
+      <!-- 3DCGモデルを読み込む -->
+      <a-assets>
+        <a-asset-item id="0" src="./assets/0.glb"></a-asset-item>
+        <a-asset-item id="1" src="./assets/1.glb"></a-asset-item>
+        <a-asset-item id="2" src="./assets/2.glb"></a-asset-item>
+        <a-asset-item id="3" src="./assets/3.glb"></a-asset-item>
+        <a-asset-item id="4" src="./assets/4.glb"></a-asset-item>
+        <a-asset-item id="5" src="./assets/5.glb"></a-asset-item>
+        <a-asset-item id="6" src="./assets/6.glb"></a-asset-item>
+        <a-asset-item id="7" src="./assets/7.glb"></a-asset-item>
+        <a-asset-item id="8" src="./assets/8.glb"></a-asset-item>
+        <a-asset-item id="9" src="./assets/9.glb"></a-asset-item>
+        <a-asset-item id="10" src="./assets/10.glb"></a-asset-item>
+        <a-asset-item id="11" src="./assets/11.glb"></a-asset-item>
+        <a-asset-item id="12" src="./assets/12.glb"></a-asset-item>
+        <a-asset-item id="13" src="./assets/13.glb"></a-asset-item>
+        <a-asset-item id="14" src="./assets/14.glb"></a-asset-item>
+        <a-asset-item id="15" src="./assets/15.glb"></a-asset-item>
+        <a-asset-item id="16" src="./assets/16.glb"></a-asset-item>
+        <a-asset-item id="17" src="./assets/17.glb"></a-asset-item>
+        <a-asset-item id="18" src="./assets/18.glb"></a-asset-item>
+        <a-asset-item id="19" src="./assets/19.glb"></a-asset-item>
+      </a-assets>
+
+      <!-- マーカーの.pattファイルを読み込む -->
+      <a-marker type="pattern" url="./assets/0.patt">
+        <a-entity gltf-model="#0"></a-entity>
+      </a-marker>
+      <a-marker type="pattern" url="./assets/1.patt">
+        <a-entity gltf-model="#1"></a-entity>
+      </a-marker>
+      <a-marker type="pattern" url="./assets/2.patt">
+        <a-entity gltf-model="#2"></a-entity>
+      </a-marker>
+      <a-marker type="pattern" url="./assets/3.patt">
+        <a-entity gltf-model="#3"></a-entity>
+      </a-marker>
+      <a-marker type="pattern" url="./assets/4.patt">
+        <a-entity gltf-model="#4"></a-entity>
+      </a-marker>
+      <a-marker type="pattern" url="./assets/5.patt">
+        <a-entity gltf-model="#5"></a-entity>
+      </a-marker>
+      <a-marker type="pattern" url="./assets/6.patt">
+        <a-entity gltf-model="#6"></a-entity>
+      </a-marker>
+      <a-marker type="pattern" url="./assets/7.patt">
+        <a-entity gltf-model="#7"></a-entity>
+      </a-marker>
+      <a-marker type="pattern" url="./assets/8.patt">
+        <a-entity gltf-model="#8"></a-entity>
+      </a-marker>
+      <a-marker type="pattern" url="./assets/9.patt">
+        <a-entity gltf-model="#9"></a-entity>
+      </a-marker>
+      <a-marker type="pattern" url="./assets/10.patt">
+        <a-entity gltf-model="#10"></a-entity>
+      </a-marker>
+      <a-marker type="pattern" url="./assets/11.patt">
+        <a-entity gltf-model="#11"></a-entity>
+      </a-marker>
+      <a-marker type="pattern" url="./assets/12.patt">
+        <a-entity gltf-model="#12"></a-entity>
+      </a-marker>
+      <a-marker type="pattern" url="./assets/13.patt">
+        <a-entity gltf-model="#13"></a-entity>
+      </a-marker>
+      <a-marker type="pattern" url="./assets/14.patt">
+        <a-entity gltf-model="#14"></a-entity>
+      </a-marker>
+      <a-marker type="pattern" url="./assets/15.patt">
+        <a-entity gltf-model="#15"></a-entity>
+      </a-marker>
+      <a-marker type="pattern" url="./assets/16.patt">
+        <a-entity gltf-model="#16"></a-entity>
+      </a-marker>
+      <a-marker type="pattern" url="./assets/17.patt">
+        <a-entity gltf-model="#17"></a-entity>
+      </a-marker>
+      <a-marker type="pattern" url="./assets/18.patt">
+        <a-entity gltf-model="#18"></a-entity>
+      </a-marker>
+      <a-marker type="pattern" url="./assets/19.patt">
+        <a-entity gltf-model="#19"></a-entity>
+      </a-marker>
+      <!-- カメラを追加 -->
+      <a-entity camera></a-entity>
+      
+    </a-scene>
+  </body>
+</html>
